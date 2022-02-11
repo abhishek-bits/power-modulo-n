@@ -26,7 +26,7 @@ def power_mod(a, m, n):
     bin_m = get_binary(m)
     # now we need to iterate and find out 'a' and 'y'
     for i in reversed(bin_m):
-        if int(i) == 1:
+        if i == '1':
             y = (y * a) % n
         a = pow(a, 2) % n
     return y

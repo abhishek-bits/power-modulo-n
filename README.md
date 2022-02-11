@@ -31,7 +31,7 @@ def power_mod(a, m, n):
     y = 1
     bin_m = get_binary(m)
     for i in reversed(bin_m):
-        if int(i) == 1:
+        if i == '1':
             y = (y * a) % n
         a = pow(a, 2) % n
     return y
